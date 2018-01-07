@@ -1,4 +1,4 @@
-from rai.networking import rpc
+from .rpc import make_rpc
 
 
 class Wallet():
@@ -9,7 +9,7 @@ class Wallet():
 
     @property
     def total_balance(self):
-        rsp = rpc(
+        rsp = make_rpc(
             {
                 'action': 'wallet_balance_total',
                 'wallet': self.id
@@ -19,7 +19,7 @@ class Wallet():
 
     @property
     def total_pending(self):
-        rsp = rpc(
+        rsp = make_rpc(
             {
                 'action': 'wallet_balance_total',
                 'wallet': self.id
