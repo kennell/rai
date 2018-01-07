@@ -1,15 +1,15 @@
 # 🗿 rai
 
-**rai** is a high-level client for interacting with [Raiblocks](https://raiblocks.net/) nodes.
+**rai** is a high-level Python client for interacting with [Raiblocks](https://raiblocks.net/) nodes. It allows you to easily build applications that make use of the Raiblocks cryptocurrency.
 
 ## Donations
 
-This library is open source and free to use, but i have a day job and bills to pay. Your contribution keeps this project going. 
+Your contribution keeps this project going ❤️
 
-XRB xrb_3yiuq5i34en3u4patnedsa8umqwyyyuomt999b3te9qmkhhujjrh345web61
-BTC 121QcrzmFsYfxpJYneTS4N6yKDdU8GGfXa
-ETH 0x56Aab3cDA7Ea02953aE394F9ffA3f7b80ed8b6DE
-LTC LerFT8YP7Q9etp2M3EsJxLZJYeFCZLV6wQ
+* XRB `xrb_3yiuq5i34en3u4patnedsa8umqwyyyuomt999b3te9qmkhhujjrh345web61`
+* BTC `121QcrzmFsYfxpJYneTS4N6yKDdU8GGfXa`
+* ETH `0x56Aab3cDA7Ea02953aE394F9ffA3f7b80ed8b6DE`
+* LTC `LerFT8YP7Q9etp2M3EsJxLZJYeFCZLV6wQ`
 
 ## Install
 
