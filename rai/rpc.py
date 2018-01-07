@@ -6,7 +6,7 @@ import requests
 
 def get_connection():
     protocol = os.getenv('RAI_PROTOCOL', default='http')
-    host = os.getenv('RAI_HOST', default='localhost')
+    host = os.getenv('RAI_HOST', default='[::1]')
     port = os.getenv('RAI_PORT', default='7076')
 
     return "{protocol}://{host}:{port}".format(

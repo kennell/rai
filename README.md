@@ -21,7 +21,7 @@ Your contribution keeps this project going ❤️
 pip install rai
 ```
 
-<sub>Note: rai requires a running Raiblocks node with RPC enabled. This can be the standalone [`rai_node`](https://github.com/clemahieu/raiblocks/releases) or the [`rai_wallet`](https://github.com/clemahieu/raiblocks/releases) GUI. You can learn more about running and configuring nodes [here](https://github.com/clemahieu/raiblocks/wiki/Running-rai_node-as-a-service).</sub>
+<sub>Note: rai requires a running Raiblocks node with RPC enabled. Read more about [installing and configuring a node here](docs/installation.md).</sub>
 
 ### Usage example
 
