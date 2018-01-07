@@ -1,6 +1,6 @@
 # 🗿 rai
 
-[![PyPI](https://img.shields.io/pypi/v/rai.svg)]() [![Code Climate](https://img.shields.io/codeclimate/maintainability/kennell/rai.svg)]() ![Travis](https://img.shields.io/travis/kennell/rai.svg)]()
+[![PyPI](https://img.shields.io/pypi/v/rai.svg)]() [![Code Climate](https://img.shields.io/codeclimate/maintainability/kennell/rai.svg)]() ![Travis](https://img.shields.io/travis/kennell/rai.svg)
 
 **rai** is a high-level, pythonic client for interacting with [Raiblocks](https://raiblocks.net/) nodes. It allows you to easily build applications that make use of the Raiblocks cryptocurrency.
 
