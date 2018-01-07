@@ -12,7 +12,7 @@ pip install rai
 
 rai requires a running Raiblocks node with RPC enabled. This can be the standalone `rai_node`, the `rai_wallet` GUI or any other compatible implementation.
 
-* You can download the latest release of rai_node and rai_wallet [here](https://github.com/clemahieu/raiblocks).
+* You can download the latest release of `rai_node` and `rai_wallet` [here](https://github.com/clemahieu/raiblocks/releases).
 * A [Docker image](https://github.com/clemahieu/raiblocks/wiki/Docker-node) is also available.
 * Read the [instructions](https://github.com/clemahieu/raiblocks/wiki/Running-rai_node-as-a-service) on configuring and running rai_node as a service.
 
