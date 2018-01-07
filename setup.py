@@ -6,7 +6,7 @@ setup(
   packages = ['rai'],
   version = '0.0.1',
   license = 'MIT',
-  description = 'A Python RPC client for interacting with Raiblocks nodes',
+  description = 'A high-level client for interacting with Raiblocks nodes',
   author = 'Kevin Kennell',
   author_email = 'kevin@kennell.de',
   install_requires=[
