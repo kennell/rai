@@ -6,16 +6,16 @@
 
 <sub>⚠ rai is not yet suited for use in production systems. It only covers a limited set of node functionality and things may break in future versions.</sub>
 
-### Donations
+## Donations
 
 Your contribution keeps this project going ❤️
 
-* XRB `xrb_3yiuq5i34en3u4patnedsa8umqwyyyuomt999b3te9qmkhhujjrh345web61`
-* BTC `121QcrzmFsYfxpJYneTS4N6yKDdU8GGfXa`
-* ETH `0x56Aab3cDA7Ea02953aE394F9ffA3f7b80ed8b6DE`
-* LTC `LerFT8YP7Q9etp2M3EsJxLZJYeFCZLV6wQ`
+* <sub>XRB `xrb_3yiuq5i34en3u4patnedsa8umqwyyyuomt999b3te9qmkhhujjrh345web61`</sub>
+* <sub>BTC `121QcrzmFsYfxpJYneTS4N6yKDdU8GGfXa`</sub>
+* <sub>ETH `0x56Aab3cDA7Ea02953aE394F9ffA3f7b80ed8b6DE`</sub>
+* <sub>LTC `LerFT8YP7Q9etp2M3EsJxLZJYeFCZLV6wQ`</sub>
 
-### Install
+## Install
 
 ```
 pip install rai
@@ -23,7 +23,7 @@ pip install rai
 
 <sub>Note: rai requires a running Raiblocks node with RPC enabled. Read more about [installing and configuring a node here](docs/installation.md).</sub>
 
-### Usage example
+## Usage example
 
 ```python
 from rai import Wallet
@@ -41,7 +41,7 @@ print(block)
 # 000D1BAEC8EC208142C99059B393051BAC8380F9B5A2E6B2489A277D81789F3F
 ```
 
-### ToDo priority
+## ToDo priority
 
 * Implement all RPC calls
 * Write Sphinx documentation
