@@ -1,11 +1,11 @@
 from .rpc import make_rpc
 
 
-class Wallet():
+class Wallet:
 
     def __init__(self, id, password=None):
         self.id = id
-        self.id = password
+        self.password = None
 
     @property
     def total_balance(self):
