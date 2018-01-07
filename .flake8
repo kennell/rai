@@ -5,4 +5,4 @@ exclude =
     build,
     dist,
     venv
-max-line-length=80
+max-line-length=84
