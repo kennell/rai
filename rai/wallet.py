@@ -10,6 +10,9 @@ class Wallet:
 
     @property
     def is_locked(self):
+        """
+            Returns True if wallet is locked and requires a password, False if not locked
+        """
         rsp = make_rpc(
             {
                 "action": "wallet_locked",
@@ -21,6 +24,9 @@ class Wallet:
 
     @property
     def total_balance(self):
+        """
+            Returns the total balance for the wallet
+        """
         rsp = make_rpc(
             {
                 'action': 'wallet_balance_total',
@@ -31,6 +37,9 @@ class Wallet:
 
     @property
     def total_pending(self):
+        """
+            Returns the total pending amount for the wallet
+        """
         rsp = make_rpc(
             {
                 'action': 'wallet_balance_total',
@@ -50,6 +59,9 @@ class Wallet:
 
     @property
     def accounts(self):
+        """
+            Returns all accounts in the wallet
+        """
         return self._get_accounts()
 
     def __str__(self):
