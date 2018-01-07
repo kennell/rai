@@ -21,7 +21,6 @@ class Wallet:
         )
         return True if rsp['locked'] == "1" else False
 
-
     @property
     def total_balance(self):
         """
@@ -62,7 +61,26 @@ class Wallet:
         """
             Returns all accounts in the wallet
         """
+        return [Account(address='xrb_123'), Account(address='xrb_456')]
         return self._get_accounts()
+
+    def _contains(self, account):
+        """
+            Returns True if Wallet contains account, else False
+            :param account: Address string or Account instance
+        """
+        if type(account) == str:
+            return account in [a.address for a in self.accounts]
+        elif type(account) == Account:
+            return account.address in [a.address for a in self.accounts]
+        else:
+            return False
+
+    def contains(self, account):
+        return self._contains(account)
+
+    def __contains__(self, account):
+        return self.contains(account)
 
     def __str__(self):
         return self.id
