@@ -1,1 +1,1 @@
-from .models.wallet import Wallet
+from .wallet import Wallet
