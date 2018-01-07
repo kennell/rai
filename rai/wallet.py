@@ -1,5 +1,5 @@
-from .rpc import make_rpc
 from .account import Account
+from .rpc import make_rpc
 
 
 class Wallet:
@@ -11,7 +11,8 @@ class Wallet:
     @property
     def is_locked(self):
         """
-            Returns True if wallet is locked and requires a password, False if not locked
+            Returns True if wallet is locked and requires a password,
+            False if not locked
         """
         rsp = make_rpc(
             {
@@ -85,4 +86,4 @@ class Wallet:
         return self.id
 
     def __repr__(self):
-        return '<Wallet {}>'.format(self.address)
+        return '<Wallet {}>'.format(self.id)
