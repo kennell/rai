@@ -21,7 +21,7 @@ Your contribution keeps this project going ❤️
 pip install rai
 ```
 
-<sub>ℹ️ rai requires a running Raiblocks node with RPC enabled. Read more about [installing and configuring a node here](docs/installation.md).</sub>
+<sub>Note: rai requires a running Raiblocks node with RPC enabled. Read more about [installing and configuring a node here](docs/installation.md).</sub>
 
 ### Usage example
 
