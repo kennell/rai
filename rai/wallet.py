@@ -1,11 +1,22 @@
 from .rpc import make_rpc
 from .account import Account
 
+
 class Wallet:
 
     def __init__(self, id, password=None):
         self.id = id
         self.password = None
+
+    @property
+    def is_locked(self):
+        rsp = make_rpc(
+            {
+                "action": "wallet_locked",
+                "wallet": self.id
+            }
+        )
+        return True if rsp['locked'] == "1" else False
 
 
     @property
