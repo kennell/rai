@@ -10,8 +10,7 @@ setup(
   author = 'Kevin Kennell',
   author_email = 'kevin@kennell.de',
   install_requires=[
-        'requests',
-        'netaddr'
+    'requests'
   ],
   url = 'https://github.com/kennell/rai',
   keywords = ['raiblocks', 'cryptocurrency'],
