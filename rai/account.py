@@ -17,7 +17,7 @@ class Account:
 
     @property
     def balance(self):
-        return self.get_balance()
+        return self._get_balance()
 
     def _get_pending(self):
         rsp = make_rpc(
@@ -30,7 +30,7 @@ class Account:
 
     @property
     def pending(self):
-        return self.get_pending()
+        return self._get_pending()
 
     def __str__(self):
         return self.address
