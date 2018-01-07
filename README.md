@@ -4,6 +4,8 @@
 
 **rai** is a high-level, pythonic client for interacting with [Raiblocks](https://raiblocks.net/) nodes. It allows you to easily build applications that make use of the Raiblocks cryptocurrency.
 
+<sub>⚠ rai is not yet suited for use in production systems. It only covers a limited set of node functionality and things may break in future versions.</sub>
+
 ### Donations
 
 Your contribution keeps this project going ❤️
