@@ -1,4 +1,7 @@
 # 🗿 rai
+
+[![PyPI](https://img.shields.io/pypi/v/rai.svg)]() 
+
 **rai** is a high-level Python client for interacting with [Raiblocks](https://raiblocks.net/) nodes. It allows you to easily build applications that make use of the Raiblocks cryptocurrency.
 
 ## Donations
