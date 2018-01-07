@@ -32,6 +32,16 @@ class Account:
     def pending(self):
         return self._get_pending()
 
+    @property
+    def representative(self):
+        rsp = make_rpc(
+            {
+                "action": "account_representative",
+                "account": self.address
+            }
+        )
+        return rsp['representative']
+
     def __str__(self):
         return self.address
 
