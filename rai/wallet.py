@@ -1,12 +1,12 @@
-from .rpc import make_rpc
 from .account import Account
+from .rpc import make_rpc
+
 
 class Wallet:
 
     def __init__(self, id, password=None):
         self.id = id
         self.password = None
-
 
     @property
     def total_balance(self):
@@ -45,4 +45,4 @@ class Wallet:
         return self.id
 
     def __repr__(self):
-        return '<Wallet {}>'.format(self.address)
+        return '<Wallet {}>'.format(self.id)

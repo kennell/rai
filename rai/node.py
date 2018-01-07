@@ -11,7 +11,8 @@ class Node:
                 }
             )
             return True
-        except:
+
+        except Exception:
             return False
 
     @property
