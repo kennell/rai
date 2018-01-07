@@ -8,3 +8,6 @@ class Account:
 
     def __str__(self):
         return self.address
+
+    def __repr__(self):
+        return '<Account {}>'.format(self.address)

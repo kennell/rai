@@ -43,3 +43,6 @@ class Wallet:
 
     def __str__(self):
         return self.id
+
+    def __repr__(self):
+        return '<Wallet {}>'.format(self.address)
