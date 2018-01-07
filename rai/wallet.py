@@ -61,7 +61,6 @@ class Wallet:
         """
             Returns all accounts in the wallet
         """
-        return [Account(address='xrb_123'), Account(address='xrb_456')]
         return self._get_accounts()
 
     def _contains(self, account):
