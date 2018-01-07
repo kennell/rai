@@ -4,7 +4,7 @@ from setuptools import setup
 setup(
   name = 'rai',
   packages = ['rai'],
-  version = '0.0.3',
+  version = '0.0.4',
   license = 'MIT',
   description = 'A high-level client for interacting with Raiblocks nodes',
   author = 'Kevin Kennell',
