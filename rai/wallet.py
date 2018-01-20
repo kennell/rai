@@ -60,7 +60,7 @@ class Wallet:
 
     def create_account(self):
         """
-            Create a new account within the wallet
+            Create new account in the wallet
         """
         rsp = make_rpc(
             {
@@ -70,7 +70,24 @@ class Wallet:
         )
         return Account(address=rsp['account'])
 
-    def _contains(self, account):
+    def remove_account(self, account):
+        """
+            Remove account from wallet
+            :param account: XRB address string or <Account> instance
+            :return: True if account was removed, False if not
+        """
+        if type(account) == Account:
+            account = account.address
+        rsp = make_rpc(
+            {
+                'action': 'account_remove',
+                'wallet': self.id
+                'account': account
+            }
+        )
+        return True if rsp['removed'] == '1' else False
+
+    def contains(self, account):
         """
             Returns True if Wallet contains account, else False
             :param account: XRB address string or <Account> instance
@@ -81,9 +98,6 @@ class Wallet:
             return account.address in [a.address for a in self.accounts]
         else:
             return False
-
-    def contains(self, account):
-        return self._contains(account)
 
     def __contains__(self, account):
         return self.contains(account)
