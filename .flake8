@@ -1,5 +1,6 @@
 [flake8]
 exclude =
+    setup.py
     .git,
     __pycache__,
     build,
