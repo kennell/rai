@@ -87,6 +87,24 @@ class Wallet:
         )
         return True if rsp['removed'] == '1' else False
 
+    def send(self, source, destination, amount):
+        """
+        :param source: XRB address or <Account> instance
+        :param destination:  XRB address or <Account> instance
+        :param amount: Amount of raw
+        :return: Block hash
+        """
+        rsp = make_rpc(
+            {
+                'action': 'send',
+                'wallet': self.id,
+                'source': source.address if type(source) == Account else source,
+                'destination': destination.address if type(destination) == Account else destination,
+                'amount': amount
+            }
+        )
+        return rsp['block']
+
     def contains(self, account):
         """
             Returns True if Wallet contains account, else False
