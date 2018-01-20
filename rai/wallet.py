@@ -81,7 +81,7 @@ class Wallet:
         rsp = make_rpc(
             {
                 'action': 'account_remove',
-                'wallet': self.id
+                'wallet': self.id,
                 'account': account
             }
         )
