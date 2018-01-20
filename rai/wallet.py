@@ -48,7 +48,8 @@ class Wallet:
         )
         return rsp['pending']
 
-    def _get_accounts(self):
+    @property
+    def accounts(self):
         rsp = make_rpc(
             {
                 'action': 'account_list',
@@ -57,17 +58,22 @@ class Wallet:
         )
         return [Account(address=acc) for acc in rsp['accounts']]
 
-    @property
-    def accounts(self):
+    def create_account(self):
         """
-            Returns all accounts in the wallet
+            Create a new account within the wallet
         """
-        return self._get_accounts()
+        rsp = make_rpc(
+            {
+                'action': 'account_create',
+                'wallet': self.id
+            }
+        )
+        return Account(address=rsp['account'])
 
     def _contains(self, account):
         """
             Returns True if Wallet contains account, else False
-            :param account: Address string or Account instance
+            :param account: XRB address string or <Account> instance
         """
         if type(account) == str:
             return account in [a.address for a in self.accounts]
