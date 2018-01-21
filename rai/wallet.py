@@ -94,12 +94,14 @@ class Wallet:
         :param amount: Amount of raw
         :return: Block hash
         """
+        source = source.address if type(source) == Account else source
+        destination = destination.address if type(destination) == Account else destination
         rsp = make_rpc(
             {
                 'action': 'send',
                 'wallet': self.id,
-                'source': source.address if type(source) == Account else source,
-                'destination': destination.address if type(destination) == Account else destination,
+                'source': source,
+                'destination': destination,
                 'amount': amount
             }
         )
