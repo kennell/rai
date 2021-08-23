@@ -6,15 +6,6 @@
 
 <sub>⚠ rai is not yet suited for use in production systems. It only covers a limited set of node functionality and things may break in future versions.</sub>
 
-## Donations
-
-Your contribution keeps this project going ❤️
-
-* <sub>XRB `xrb_3yiuq5i34en3u4patnedsa8umqwyyyuomt999b3te9qmkhhujjrh345web61`</sub>
-* <sub>BTC `121QcrzmFsYfxpJYneTS4N6yKDdU8GGfXa`</sub>
-* <sub>ETH `0x56Aab3cDA7Ea02953aE394F9ffA3f7b80ed8b6DE`</sub>
-* <sub>LTC `LerFT8YP7Q9etp2M3EsJxLZJYeFCZLV6wQ`</sub>
-
 ## Install
 
 ```
