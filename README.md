@@ -8,9 +8,7 @@
 
 ## Install
 
-```
-pip install rai
-```
+⚠⚠⚠ On 2022-09-30 ownership and full control of PyPI package `rai` was handed over to [simonbiggs](simonbiggs). Please install this code from source if required. ⚠⚠⚠
 
 <sub>Note: rai requires a running Raiblocks node with RPC enabled. Read more about [installing and configuring a node here](docs/installation.md).</sub>
 
